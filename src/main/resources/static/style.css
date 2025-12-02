@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #ededed;
+  color: purple;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem;
+  
+}
+
+form {
+  background-color: white;
+  width: 30%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin: 0 auto;
+  gap: .25rem;
+  font-size: large;
+}
+
+input[type="text"] {
+  border: 1px solid grey;
+  padding: .5rem 1rem;
+}
+
+
+input[type="submit"] {
+  background-color: purple;
+  font-size: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  padding: .5rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
