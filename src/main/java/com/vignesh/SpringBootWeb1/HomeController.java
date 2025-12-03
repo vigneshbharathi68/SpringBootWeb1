@@ -1,6 +1,7 @@
 package com.vignesh.SpringBootWeb1;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -29,12 +30,9 @@ public class HomeController {
   //   mv.setViewName("result.jsp");
   //   return mv;
   // }
-  
+
   @RequestMapping("addAlien")
-  public ModelAndView add(@RequestParam("aid") int aid, @RequestParam("aname") String aname, ModelAndView mv) {
-    Alien alien = new Alien();
-    mv.addObject(alien);
-    mv.setViewName("result.jsp");
-    return mv;
+  public String add(@ModelAttribute Alien alien) {
+    return "result.jsp";
   }
 }
